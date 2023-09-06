@@ -1,0 +1,135 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+     background-color: #53577e;
+     color: #fff;
+}
+
+/* Nav bar-1 */
+.navBar_1 {
+     display: flex;
+     flex-direction: column;
+     width: 250px;
+     border: 2px solid gainsboro;
+     border-radius: 10px;
+}
+
+.navBar_1>a {
+     text-decoration: none;
+     background-color: gainsboro;
+     color: #111;
+     padding: 20px;
+     font-size: x-large;
+}
+
+.navBar_1>a:hover {
+     background-color: rgb(85, 85, 243);
+     color: #fff;
+}
+
+/*Nav bar-1 ends here*/
+/* Nav bar 2 starts */
+.navBar_2 {
+     background-color: #111;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px;
+     font-size: x-large;
+     box-shadow: 4px 4px 5px rgb(59, 59, 59);
+     height: 50px;
+}
+
+.right>p {
+     font-size: larger;
+     color: #fff;
+     background-color: #111;
+     padding-right: 5px;
+}
+
+.left {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     justify-content: center;
+}
+
+.anchor {
+     background-color: #111;
+     display: flex;
+     height: 50px;
+     justify-content: center;
+     align-items: center;
+}
+
+.anchor>a {
+     background-color: #111;
+     text-decoration: none;
+     margin-left: 2rem;
+     margin: 0 auto;
+}
+
+/* psedo class selector to select child */
+/* .anchor>a:first-child{
+     margin-left: 10px;
+} */
+
+.anchor>a:hover {
+     color: #b5b5bd;
+     transition: 0.3s;
+     box-shadow: 0px 2px 5px #b5b5bd;
+}
+
+/* Nav bar 2 ends */
+/* Nav bar 3 start */
+.navBar_3 {
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     justify-content: center;
+     width: 400px;
+     border: 5px solid gainsboro;
+     border-radius: 10px;
+}
+
+.navBar_3>a {
+     text-decoration: none;
+     background-color: #111;
+     color: #fff;
+     padding: 20px;
+     font-size: x-large;
+}
+
+.navBar_3>a:hover {
+     background-color: #fff;
+     color: rgb(75, 75, 75);
+     transition: 0.3s;
+}
+
+@media screen and (max-width: 700px) {
+     .navBar_3 {
+          width: 250px;
+          border: 2.5px solid gainsboro;
+          border-radius: 5px;
+     }
+     .navBar_3>a {
+          font-size: larger;
+     }
+}
+
+@media screen and (max-width: 500px) {
+     .navBar_3 {
+          width: 200px;
+          border: 2px solid gainsboro;
+          border-radius: 5px;
+          /* margin-left: 5px; */
+     }
+     .navBar_3>a {
+          padding: 10px;
+          font-size: large;
+     }
+     
+}
